@@ -9,6 +9,7 @@ Measurement sensor's raw data parser
 - Aqua Troll 600 (AT600)
 - RINKO Profiler
 - RINKO AAQ
+- RINKO W (InfinityDO)
 
 ## Example
 ```py
@@ -21,5 +22,10 @@ df = CA.read_csv(f)
 
 - seawater (CA)
 ```
-conda install -c conda-forge
+conda install -c conda-forge seawater
+```
+
+- bs4 (AT600)
+```
+conda install -c conda-forge beautifulsoup4
 ```

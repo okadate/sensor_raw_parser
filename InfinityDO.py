@@ -3,13 +3,15 @@
 
 import pandas as pd
 
-def read_csv(f):
+def read_csv(f, verbose=True):
     
     txt = ''
     for i, line in enumerate(open(f, encoding='shift_jis').readlines(1000)):
         if '[Item]' in line: break
         txt += line
-    print(txt)
+    
+    if verbose:
+        print(txt)
     
     # 日時 水温[℃] DO[%] Weiss-DO[mg/l] 電池電圧[V] G&G-DO[mg/l] B&K-DO[mg/l]
 
