@@ -23,6 +23,12 @@ def read_csv(f, raw=False):
             names[i] = 'DO'
         elif u'温度' in name:
             names[i] = 'temp'
+        elif u'センサーの深度' in name:
+            names[i] = 'depth'
+        elif u'気圧' in name:
+            names[i] = 'press_air'
+        elif u'絶対圧力' in name:
+            names[i] = 'press'
     df.columns = names
     #df = df.rename(columns={"DO 濃度, mg/L (LGR S/N: 20758290, SEN S/N: 20758290)":'DO',
     #                    "温度, °C (LGR S/N: 20758290, SEN S/N: 20758290)":'temp'})
