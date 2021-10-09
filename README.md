@@ -10,6 +10,7 @@ Measurement sensor's raw data parser
 - RINKO Profiler
 - RINKO AAQ
 - RINKO W (InfinityDO)
+- DEFI2-L
 
 ## Example
 ```py
