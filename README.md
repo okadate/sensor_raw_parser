@@ -3,14 +3,14 @@ Measurement sensor's raw data parser
 (c) 2021 OKADA Teruhisa
 
 ## Sensors
-- CastAway CTD (CA)
-- HOBO water level loger
-- HOBO DO loger
-- Aqua Troll 600 (AT600)
-- RINKO Profiler
-- RINKO AAQ
-- RINKO W (InfinityDO)
-- DEFI2-L
+- CA       CastAway CTD
+- HOBO     U20 water level loger, U26 DO loger
+- AT600    Aqua Troll 600
+- RINKO    RINKO Profiler
+- AAQ      RINKO AAQ 
+- Infinity RINKO W
+- DEFI     DEFI2-L
+- MFL      Multi-excitation fluorometer
 
 ## Example
 ```py
