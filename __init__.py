@@ -14,3 +14,11 @@ def JFE_header(f, verbose=False):
             header['header'] += line.strip('\n')
     if verbose: pprint(header)
     return header, i
+
+
+from O2_saturation import *
+
+def salinity_correct(DO0, T, S):
+    DOp = DO0 / O2_saturation(T, S=0)
+    DOsc = DOp * O2_saturation(T, S)
+    return DOsc
